@@ -13,11 +13,17 @@ Inside each topic folder, files are named using the LeetCode problem number and 
 
 ```text
 📦 leetcode-solutions
- ┣ 📂 Sorting
- ┃ ┣ 📜 0217_Contains_Duplicate.c
- ┃ ┗ 📜 0242_Valid_Anagram.c
  ┣ 📂 Arrays
  ┃ ┗ 📜 0001_Two_Sum.c
+ ┣ 📂 Linked_List
+ ┃ ┣ 📜 0203_Remove_Linked_List_Elements.c
+ ┃ ┗ 📜 0206_Reverse_Linked_List.c
+ ┣ 📂 Sorting
+ ┃ ┣ 📜 0088_Merge_Sorted_Array.c
+ ┃ ┣ 📜 0169_Majority_Element.c
+ ┃ ┣ 📜 0217_Contains_Duplicate.c
+ ┃ ┣ 📜 0242_Valid_Anagram.c
+ ┃ ┗ 📜 0268_Missing_Number.c
  ┗ 📜 README.md
  ```
 
