@@ -23,10 +23,9 @@ Inside each topic folder, files are named using the LeetCode problem number and 
 
  ## 🎯 My Goals
 - Build a strong foundation in core algorithms (Sorting, Searching, etc.).
-- Understand and document the **Time and Space Complexity (Big O)** for every solution.
 - Write clean, readable, and well-commented code.
 
 ## 📊 Statistics
 ![LeetCode Stats](https://leetcard.jacoblin.cool/slanja?theme=dark&ext=activity)
 ---
-Check out my LeetCode profile  [@slanja](https://leetcode.com/u/slanja/)
+Check out my LeetCode profile [@slanja](https://leetcode.com/u/slanja/)
