@@ -1,4 +1,4 @@
-# 👨‍💻 LeetCode Solutions
+# 🗂️ LeetCode Solutions
 
 Welcome to my personal repository of algorithmic problem solutions from [LeetCode](https://leetcode.com/). I created this space to track my problem-solving journey, solidify my understanding of data structures, and practice writing efficient code.
 
@@ -14,17 +14,20 @@ Inside each topic folder, files are named using the LeetCode problem number and 
 ```text
 📦 leetcode-solutions
  ┣ 📂 Arrays
- ┃ ┗ 📜 0001_Two_Sum.c
+ ┃ ┣ 📜 0001_Two_Sum.c
+ ┃ ┗ ...
  ┣ 📂 Linked_List
  ┃ ┣ 📜 0203_Remove_Linked_List_Elements.c
- ┃ ┗ 📜 0206_Reverse_Linked_List.c
+ ┃ ┣ 📜 0206_Reverse_Linked_List.c
+ ┃ ┗ ...
  ┣ 📂 Sorting
  ┃ ┣ 📜 0088_Merge_Sorted_Array.c
  ┃ ┣ 📜 0169_Majority_Element.c
  ┃ ┣ 📜 0217_Contains_Duplicate.c
  ┃ ┣ 📜 0242_Valid_Anagram.c
- ┃ ┗ 📜 0268_Missing_Number.c
- ┗ 📜 README.md
+ ┃ ┣ 📜 0268_Missing_Number.c
+ ┃ ┗ ...
+ ┗ 📑 README.md
  ```
 
  ## 🎯 My Goals
@@ -34,4 +37,4 @@ Inside each topic folder, files are named using the LeetCode problem number and 
 ## 📊 Statistics
 ![LeetCode Stats](https://leetcard.jacoblin.cool/slanja?theme=dark&ext=activity)
 ---
-Check out my LeetCode profile [@slanja](https://leetcode.com/u/slanja/)
+Check out my LeetCode profile [@slanja](https://leetcode.com/u/slanja/) 🔥
