@@ -7,23 +7,21 @@ char* int_to_string(int n) {
 
 bool isPalindrome(int x) {
     char* s = int_to_string(x);
-    printf("%s\n", s);
 
+    size_t len = strlen(s);
     size_t i = 0;
-    size_t j = strlen(s)-1;
+    size_t j = len-1;
     
-    while (i < strlen(s) && j > 0) {
-        if (i == j) break;
-
+    while (i < j) {
         if (s[i] == s[j]) {
             i++, j--;
         }
 
         else {
+            free(s);
             return false;
         }
     }   
     free(s);
-
     return true;
 }
