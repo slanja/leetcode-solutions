@@ -1,11 +1,14 @@
-int comp(const void *a, const void *b) {
-    return (*(int *)a - *(int *)b);
-}
-
 int findMin(int* nums, int numsSize) {
-    // sort the array in ascending order using qsort
-    qsort(nums, numsSize, sizeof(int), comp);
+    int i = 0;          // variable to iterate through the array
+    int min = nums[0];  // variable to store the minimum element
 
-    // return the first element of the sorted array, which is the minimum element
-    return nums[0];
+    // iterate through the array to find the minimum element
+    while (i < numsSize) {
+        // update the minimum element if the current element is smaller
+        if (nums[i] < min) min = nums[i];
+
+        i++;
+    }
+
+    return min;
 }
