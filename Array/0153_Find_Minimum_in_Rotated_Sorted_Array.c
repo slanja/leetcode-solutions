@@ -1,0 +1,9 @@
+int comp(const void *a, const void *b) {
+    return (*(int *)a - *(int *)b);
+}
+
+int findMin(int* nums, int numsSize) {
+    qsort(nums, numsSize, sizeof(int), comp);
+
+    return nums[0];
+}
