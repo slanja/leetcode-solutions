@@ -1,27 +1,20 @@
-int comp(const void *a, const void *b) {
-    char ca = *(const char *)a;
-    char cb = *(const char *)b;
-
-    // Calculate a rank for each character: 'a' and 'A' both get 0, 'b' and 'B' both get 2, etc.
-    int ra = (tolower(ca) - 'a') * 2 + (islower(ca) ? 1 : 0);
-    int rb = (tolower(cb) - 'a') * 2 + (islower(cb) ? 1 : 0);
-
-    return ra - rb;
-}
-
-int numberOfSpecialChars(char *word) {
-    size_t len = strlen(word);
-    qsort(word, len, sizeof(char), comp);
+int numberOfSpecialChars(char* word) {
+    // A character is special if both its lowercase and uppercase forms appear in word.
+    bool lower[26];
+    bool upper[26];
 
     int special = 0;
+    size_t len = strlen(word);
 
-    // Check for pairs of uppercase and lowercase letters that are the same character
-    for (size_t i = 0; i + 1 < len; i++) {
-        if (isupper(word[i])
-         && islower(word[i + 1])
-         && tolower(word[i]) == word[i + 1]) {
-            special++;
-        }
+    // Check if the character is a lowercase letter or an uppercase letter and mark it in the respective array
+    for (size_t i = 0; i < len; i++) {
+        if (islower(word[i])) lower[word[i] - 'a'] = true;
+        else if (isupper(word[i])) upper[(word[i] - 'A')] = true;
+    }
+
+    // Count the number of special characters by checking if both lowercase and uppercase forms are present
+    for (size_t i = 0; i < 26; i++) {
+        if (lower[i] && upper[i]) special++;
     }
     return special;
 }
